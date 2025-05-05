@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>DOM</title>
+  <style>
+    body{
+      font-family: Arial, Helvetica, sans-serif;
+      background-color: #c8c5e1;
+    }
+    p > abbr{
+      text-decoration: none;
+      color: rgb(190, 67, 67);
+      font-weight: bolder;
+    }
+  </style>
+</head>
+<body>
+  <h1>Primeiros Passos com DOM</h1>
+  <p><abbr title="Document Object Model">DOM</abbr> é um conjunto de objetos dentro do navegador que vai <br> dar acesso aos componentes internos do website!</p>
+  <p>Árvore Dom com <strong>JAVASCRIPT</strong></p>
+  <div id="msg">Clique em mim</div>
+  <script>
+    var p = window.document.getElementsByTagName('p')[1]; 
+    document.write(p.innerText);
+    /* var d = window.document.getElementById('msg');
+    d.style.background = 'green';
+    d.innerHTML = 'Estou aguardando!' */
+    var d = document.querySelector('div#msg');
+    d.style.color = 'blue';
+  </script>
+</body>
+</html>
+
