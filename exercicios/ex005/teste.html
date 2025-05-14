@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Treinamento</title>
+  <style>
+    body{
+      height: 100vh;
+      font-family: Arial, Helvetica, sans-serif;
+      /*display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center; */
+    }
+  </style>
+</head>
+<body>
+  <!--<h1>Frankie Valli</h1>
+  <p>I wanna hug you so much</p>
+  <div class="caixa">
+    <p>Oh pretty <strong>baby..</strong></p>
+  </div>
+  <script>
+    let d = window.document.querySelector('div.caixa');
+    document.write(d.innerHTML);
+    d.style.background = 'red' 
+  </script> */ -->
+  <h1>Média</h1>
+  <p>Resultado de média dos alunos.</p>
+  <script>
+    let nota1 = Number(window.prompt("Quanto você tirou na primeira prova? "));
+    let nota2 = Number(window.prompt("Quanto você tirou na segunda prova? "));
+    let soma = nota1 + nota2;
+    let media = soma/2;
+    document.writeln(`A média foi de ${soma}!`)
+  </script>
+</body>
+</html>
